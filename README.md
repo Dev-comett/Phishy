@@ -24,3 +24,6 @@ A mobile-friendly Streamlit web app that checks any URL for malicious content us
    ```bash
    git clone https://github.com/Dev-comett/Phishy.git
    cd Phishy
+
+
+#Code enhanced and beautified by ChatGPT
