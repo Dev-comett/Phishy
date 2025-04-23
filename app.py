@@ -166,9 +166,9 @@ if st.session_state.history:
 st.markdown(
     """
     <div class="footer">
-        Created by Your Name | 
-        <a href="https://github.com/your-github-username" target="_blank">GitHub</a> | 
-        <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
+        Created by Im_Dev | 
+        <a href="https://github.com/dev-comett" target="_blank">GitHub</a> | 
+        <a href="https://linkedin.com/in/dev-ice" target="_blank">LinkedIn</a>
     </div>
     """,
     unsafe_allow_html=True,
