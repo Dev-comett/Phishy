@@ -7,7 +7,7 @@ import streamlit as st
 VIRUS_TOTAL_API_KEY = st.secrets["VIRUS_TOTAL_API_KEY"]
 SAFE_BROWSING_API_KEY = st.secrets["SAFE_BROWSING_API_KEY"]
 
-# ─── Page Config & Pornhub-inspired Theme ────────────────────────────────────────
+# ─── Page Config  ────────────────────────────────────────
 st.set_page_config(page_title="URL Safety Checker", layout="wide", initial_sidebar_state="collapsed")
 st.markdown(
     """
@@ -166,7 +166,7 @@ if st.session_state.history:
 st.markdown(
     """
     <div class="footer">
-        Created by Im_Dev | 
+        Made with 💓 by Im_Dev | 
         <a href="https://github.com/dev-comett" target="_blank">GitHub</a> | 
         <a href="https://linkedin.com/in/dev-ice" target="_blank">LinkedIn</a>
     </div>
