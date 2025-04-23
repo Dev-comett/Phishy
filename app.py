@@ -1,14 +1,11 @@
 
-import os
 import base64
 import requests
 import streamlit as st
-from dotenv import load_dotenv
 
-# ─── Load API Keys ───────────────────────────────────────────────────────────────
-load_dotenv()
-VIRUS_TOTAL_API_KEY = os.getenv("VIRUS_TOTAL_API_KEY")
-SAFE_BROWSING_API_KEY = os.getenv("SAFE_BROWSING_API_KEY")
+# ─── Load API Keys from Streamlit Secrets ────────────────────────────────────────
+VIRUS_TOTAL_API_KEY = st.secrets["VIRUS_TOTAL_API_KEY"]
+SAFE_BROWSING_API_KEY = st.secrets["SAFE_BROWSING_API_KEY"]
 
 # ─── Page Config & Pornhub-inspired Theme ────────────────────────────────────────
 st.set_page_config(page_title="URL Safety Checker", layout="wide", initial_sidebar_state="collapsed")
@@ -169,9 +166,9 @@ if st.session_state.history:
 st.markdown(
     """
     <div class="footer">
-        Created by Im_Dev | 
-        <a href="https://github.com/DEV-COMETT" target="_blank">GitHub</a> | 
-        <a href="https://linkedin.com/in/dev-ice" target="_blank">LinkedIn</a>
+        Created by Your Name | 
+        <a href="https://github.com/your-github-username" target="_blank">GitHub</a> | 
+        <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
     </div>
     """,
     unsafe_allow_html=True,
