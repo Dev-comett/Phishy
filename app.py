@@ -8,7 +8,7 @@ VIRUS_TOTAL_API_KEY = st.secrets["VIRUS_TOTAL_API_KEY"]
 SAFE_BROWSING_API_KEY = st.secrets["SAFE_BROWSING_API_KEY"]
 
 # ─── Page Config  ────────────────────────────────────────
-st.set_page_config(page_title="URL Safety Checker", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="URL Safety Checker", layout="wide", initial_sidebar_state="collapsed", page_icon = "🔎")
 st.markdown(
     """
     <style>
